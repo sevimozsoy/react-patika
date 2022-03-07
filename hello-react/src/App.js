@@ -46,7 +46,15 @@ function App() {
         Name
         <input type="myInput" /></label>
 
-    <User name="Sevim" surname="Özsoy" age={21} isLoggedIn={false} friends={friends}/>
+    <User name="Sevim" 
+    surname="Özsoy" 
+    age={21} 
+    isLoggedIn={true} 
+    friends={friends} 
+    address={{
+      title:'Isparta/MERKEZ',
+      zip:32000
+    }}/>
     </>
   )
 
