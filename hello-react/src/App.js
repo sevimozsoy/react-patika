@@ -1,10 +1,11 @@
 import './App.css';
 import Header from './components/Header';
 import React from 'react';
+import User from './components/User';
 
-const name = "sevim";
-const surname = "ozsoy";
-const isLoggedIn = false;
+const nameForConst = "sevim";
+const surnameForConst = "ozsoy";
+const isLoggedInForConst = false;
 
 function App() {
   // return React.createElement("div",null,"Hello");
@@ -15,18 +16,19 @@ function App() {
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis atque incidunt earum temporibus nihil possimus, odit aperiam tempore sapiente totam quisquam voluptatum accusantium saepe cupiditate reprehenderit commodi sunt laudantium voluptates.
       </p>
 
-      <h1>{name}</h1>
+      <h1>{nameForConst}</h1>
       <h1>
-        {isLoggedIn ? `Benim adım ${name} soyadım ${surname}` : "Giriş yapmadınız."}
+        {isLoggedInForConst ? `Benim adım ${nameForConst} soyadım ${surnameForConst}` : "Giriş yapmadınız."}
         {/* {isLoggedIn &&`Benim adım ${name} soyadım ${surname}`}
       {!isLoggedIn && "Giriş yapmadınız."} */}
 
       </h1>
 
-      <label htmlF or='myInput'>
+      <label htmlFor='myInput'>
         Name
         <input type="myInput" /></label>
 
+<User name="Sevim" surname="Özsoy" age={21} isLoggedIn={false}/>
     </>
   )
 
