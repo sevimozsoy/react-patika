@@ -7,6 +7,24 @@ const nameForConst = "sevim";
 const surnameForConst = "ozsoy";
 const isLoggedInForConst = false;
 
+const friends = [
+  {
+    id:1,
+    name: 'vin',
+  
+  },
+  {
+    id:2,
+    name: 'emirhan',
+  
+  },
+  {
+    id:3,
+    name: 'sevim',
+    
+  },
+];
+
 function App() {
   // return React.createElement("div",null,"Hello");
   return (
@@ -28,7 +46,7 @@ function App() {
         Name
         <input type="myInput" /></label>
 
-<User name="Sevim" surname="Özsoy" age={21} isLoggedIn={false}/>
+    <User name="Sevim" surname="Özsoy" age={21} isLoggedIn={false} friends={friends}/>
     </>
   )
 
