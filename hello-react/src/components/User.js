@@ -1,3 +1,4 @@
+import { PropTypes } from "prop-types";
 function User({name,surname,age,isLoggedIn, friends}){
     console.log(name);
     return(    
@@ -9,6 +10,14 @@ function User({name,surname,age,isLoggedIn, friends}){
         </div>
     ))}
     </>
-)
+);
 }
+
+User.propTypes = {
+    name: PropTypes.string,
+    surname: PropTypes.string,
+    age: PropTypes.number,
+    isLoggedIn: PropTypes.bool,
+    friends: PropTypes.array
+};
 export default User;

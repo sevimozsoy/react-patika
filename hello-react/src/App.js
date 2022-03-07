@@ -10,17 +10,17 @@ const isLoggedInForConst = false;
 const friends = [
   {
     id:1,
-    name: 'vin',
+    name: "vin",
   
   },
   {
     id:2,
-    name: 'emirhan',
+    name: "emirhan",
   
   },
   {
     id:3,
-    name: 'sevim',
+    name: "sevim",
     
   },
 ];
